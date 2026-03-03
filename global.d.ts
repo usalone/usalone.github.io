@@ -1,6 +1,6 @@
-import React from "react";
+import * as React from 'react';
 
-declare global {
+declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
       'md-filled-button': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & { class?: string, slot?: string };
